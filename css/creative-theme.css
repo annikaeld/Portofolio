@@ -1,14 +1,12 @@
 body.creative-theme {
-    --headline-color: #5FB2FF;
+    --headline-color: #0170F3;
     --paragraph-text-color: #000;
     --background-color: #EAF5FF;
     --text-header: #fff;
     --header-background: #0170F3;
     --nav-active: #075c91;
     --form-background-color: #EAF5FF;
-    --cta: #8E2C9B;
-
-
+    --cta: #7b3c88;
 }
 
 

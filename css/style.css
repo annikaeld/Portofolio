@@ -21,7 +21,7 @@ h3 {
 }
 
 p {
-    line-height: 1.2;
+    line-height: 1.1;
     color: var(--paragraph-text-color);
     font-family: var(--font);
     font-size: var(--paragraph-font-size);
@@ -38,6 +38,12 @@ p {
     text-align: center;
     box-shadow: var(--shadow);
     font-family: var(--font);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.cta:hover {
+    transform: scale(1.05);
 }
 
 .footer-section {
@@ -125,7 +131,7 @@ p {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font);
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
@@ -317,11 +323,5 @@ form {
 
     nav a {
         padding: 1.2rem 10px;
-    }
-
-    .contact-section form input,
-    .contact-section form textarea {
-        width: 80%;
-        max-width: 80%;
     }
 }
