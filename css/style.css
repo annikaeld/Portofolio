@@ -221,7 +221,6 @@ footer p {
     box-shadow: var(--shadow);
     padding: 15px;
     transition: box-shadow 0.2s;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
