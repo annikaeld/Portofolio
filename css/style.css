@@ -28,13 +28,13 @@ p {
 }
 
 .cta {
-    background-color: #F4C14F;
-    color: black;
+    background-color: var(--cta);
+    color: var(--text-header);
     font-size: 1em;
     border-radius: 5px;
     padding: 0.2em 0.5em;
     text-decoration: none;
-    border: 3px solid black;
+    border: 3px solid var(--text-color);
     text-align: center;
     box-shadow: var(--shadow);
     font-family: var(--font);
@@ -47,7 +47,7 @@ p {
 .background-section,
 .gallery-section,
 .contact-section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #gallery-section,
@@ -299,7 +299,7 @@ form {
 
     .gallery-section {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         margin: 0;
         padding: 0;
     }
@@ -315,14 +315,6 @@ form {
 }
 
 @media screen and (max-width: 570px) {
-    .display-middle-text {}
-
-    .gallery-section {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin: 0;
-        padding: 0;
-    }
 
     nav a {
         padding: 1.2rem 10px;
