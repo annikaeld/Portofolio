@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/creative-theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2072bb14b3.js" crossorigin="anonymous"></script>
+    <script src="js/toggleTheme.js" defer></script>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <nav>
+        <span><a href="#">HOME</a></span>
+        <span><a href="#gallery-section">PORTOFOLIO</a></span>
+        <span><a href="#contact-section">CONTACT</a></span>
+        <span><input type="checkbox" id="toggleSwitch" onclick="toggleTheme()"></input></span>
+    </nav>
+    </label>
+    <section id="home-section" class="background-section">
+        <div class="display-middle-text">
+            <h1>The Journey of a Front-End Developer</h1>
+            <p>I’m Annika, an aspiring front-end developer passionate about crafting a
+                user-centered web experience. This is where creativity meets code — a showcase of my projects.
+
+                Feel free to explore and see what I’ve been working on.</p>
+        </div>
+    </section>
+
+    <section id="gallery-section" class="gallery-section">
+        <!-- Image gallery section -->
+        <div class="post">
+            <img src="pictures/stokk.jpg" alt="STOKK webpage">
+        </div>
+        <div class="post">
+            <img src="pictures/rainydays.jpg" alt="Rainydays webpage">
+        </div>
+        <div class="post">
+            <img src="pictures/science-museum.jpg" alt="Science-museum webpage">
+        </div>
+    </section>
+
+    <section id="contact-section" class="contact-section">
+        <!-- Contact form section -->
+        <h2>Contact Me</h2>
+        <form action="your-form-handler-url" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/annika-eld%C3%B8y-6ba352198/" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/annikaeld" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+
+        <section class="footer-section">
+            <!-- Footer section -->
+            <p>&copy; 2024 Annika. All rights reserved.</p>
+        </section>
+</body>
+
+</html>
