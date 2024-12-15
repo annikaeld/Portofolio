@@ -2,11 +2,14 @@
     --headline-font: Oswald, sans-serif;
     --font: Verdana, sans-serif;
     --text-color: #333;
+    --paragraph-text-color: #666;
     --background-color: #E3E4E8;
     --text-header: #fff;
+    --header-background: #444;
     --background-switch: #989CA6;
     --light-grey: #BBBBC7;
     --shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
     --bright-blue: #40EDFF;
+    --nav-active: #585859;
 
 }

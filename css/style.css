@@ -15,7 +15,11 @@
 .gallery-section,
 .contact-section {
     height: 100vh;
+}
 
+#gallery-section,
+#contact-section {
+    margin-top: 80px;
 }
 
 .display-middle-text {
@@ -103,7 +107,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #444;
+    background-color: var(--header-background);
     padding: 1.2rem;
     position: fixed;
     top: 0;
@@ -123,7 +127,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #585859;
+    background-color: var(--nav-active);
     transition: background-color 0.3s;
 }
 
@@ -142,7 +146,7 @@ h3 {
 
 p {
     line-height: 1.2;
-    color: #666;
+    color: var(--paragraph-text-color);
     font-family: var(--font);
 }
 
@@ -156,21 +160,21 @@ footer {
     bottom: 0;
 }
 
-#gallery-section {
+.gallery-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-    margin: 0;
-    padding: 0;
+
+
 }
 
-#gallery-section .post {
+.gallery-section .post {
     margin: 10px;
     padding: 15px;
     box-sizing: border-box;
 }
 
-#gallery-section img {
+.gallery-section img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -208,8 +212,6 @@ form {
 
 .contact-section {
     background-color: #E3E4E8;
-    padding-top: 80px;
-    /* Add padding to move the h2 down */
 }
 
 .contact-section h2 {
@@ -269,7 +271,7 @@ form {
         width: 100vw;
     }
 
-    #blogposts {
+    .gallery-section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin: 0;
@@ -277,10 +279,10 @@ form {
     }
 
 
-    .contact-section form input#name,
-    .contact-section form input#email,
+    .contact-section form input,
     .contact-section form textarea {
         width: 80%;
+        max-width: 80%;
     }
 
 
@@ -289,7 +291,7 @@ form {
 @media screen and (max-width: 570px) {
     .display-middle-text {}
 
-    #blogposts {
+    .gallery-section {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin: 0;
@@ -298,5 +300,11 @@ form {
 
     nav a {
         padding: 1.2rem 10px;
+    }
+
+    .contact-section form input,
+    .contact-section form textarea {
+        width: 80%;
+        max-width: 80%;
     }
 }
