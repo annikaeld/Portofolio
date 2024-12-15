@@ -24,6 +24,7 @@ p {
     line-height: 1.2;
     color: var(--paragraph-text-color);
     font-family: var(--font);
+    font-size: var(--paragraph-font-size);
 }
 
 .cta {
@@ -52,6 +53,7 @@ p {
 #gallery-section,
 #contact-section {
     margin-top: 80px;
+    padding-top: 67px;
 }
 
 .display-middle-text {
@@ -63,8 +65,8 @@ p {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--text-color);
-    border: var(--text-color) 2px solid;
+    color: var(--paragraph-text-color);
+    border: var(--paragraph-text-color) 2px solid;
     font-family: var(--headline-font);
     font-size: 2rem;
     font-weight: 400;
@@ -130,7 +132,7 @@ body {
 }
 
 header {
-    background-color: var(--text-color);
+    background-color: var(--header-background);
     color: var(--text-header);
     padding: 10px 0;
     text-align: center;
@@ -171,12 +173,17 @@ nav a:hover {
 
 
 footer {
-    background-color: var(--headline-color);
+    background-color: var(--header-background);
     text-align: center;
     padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: var(--text-header);
 }
 
 .fab {
@@ -276,6 +283,9 @@ form {
     transform: scale(1.05);
 }
 
+#thankYouMessage {
+    display: none;
+}
 
 @media screen and (max-width: 1024px) {
     .display-middle-text {

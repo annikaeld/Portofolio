@@ -1,12 +1,12 @@
 body.creative-theme {
     --text-color: #f411b0;
-    --headline-color: #89467e;
-    --paragraph-text-color: #850df5;
-    --background-color: #0fee59;
-    --text-header: #eb0909;
-    --header-background: #29a0eb;
+    --headline-color: #5FB2FF;
+    --paragraph-text-color: #000;
+    --background-color: #EAF5FF;
+    --text-header: #fff;
+    --header-background: #0170F3;
     --nav-active: #075c91;
-    --form-background-color: #86f4d1;
+    --form-background-color: #EAF5FF;
 
 
 }
